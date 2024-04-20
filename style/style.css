@@ -3,6 +3,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 h1,
@@ -14,47 +15,88 @@ h6 {
   font-family: "Montserrat", sans-serif !important;
 }
 
-.util-title {
-  font-size: 2em;
-  font-weight: 600;
+.navbar-brand {
+  transition: transform 0.2s ease;
+}
+
+.nav-item {
+  margin: 0rem 1rem;
+}
+
+.nav-link:hover {
+  color: #457b9d !important;
+}
+
+.dropdown-item:active {
+  color: #457b9d !important;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.2);
+}
+
+.cta {
+  background-color: #457b9d;
+  padding: 0.5rem;
+  border-radius: 5px;
   color: #f7f7f7;
 }
 
-.hero-header {
+.cta:hover {
+  background-color: #457b9d;
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: #f7f7f7;
+}
+
+.container-fluid {
+  max-width: 1600px;
+}
+
+.hero-header,
+.acc-header {
   background-color: #457b9d !important;
   padding: 10rem 3rem;
-  margin: 6.25rem 0.9375rem 1.25rem 0.9375rem;
+  margin: 8rem 0.9375rem 1.25rem 0.9375rem;
   border-radius: 20px;
-  background-image: url("../images/hero.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-blend-mode: multiply;
 }
 
-.hero-subtitle {
-  font-size: 4em;
-  font-weight: 900;
-  color: #f7f7f7;
+.hero-header {
+  background-image: url("../images/hero.webp");
+}
+
+.acc-header {
+  background-image: url("../images/waterford.webp");
 }
 
 .highlight {
   color: #7baece;
 }
 
+.small-about {
+  background-image: url(../images/gear-accent.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: 5rem 0rem 6rem 0rem;
+  border-radius: 20px;
+}
+
 .filtered-img {
   filter: grayscale(100%);
 }
 
-p {
-  color: #f7f7f7;
-}
-
 .info-box {
   background-color: #457b9d;
-  padding: 10rem 3rem;
+  padding: 3rem 3rem;
   margin: 6.25rem 0.9375rem 1.25rem 0.9375rem;
   border-radius: 20px;
+  background-image: url(../images/icons.webp);
+  background-size: cover;
 }
 
 .container-test {
@@ -153,13 +195,13 @@ p {
   position: absolute;
   bottom: -20px;
   left: 33%;
-  color: #101c81;
+  color: #f7f7f7;
   font-size: 1.1rem;
   font-weight: 600;
-  background-color: aquamarine;
+  background-color: #457b9d;
   padding: 0.3rem 0.4rem;
   border-radius: 5px;
-  box-shadow: 2px 3px 15px #3c405a;
+  box-shadow: 2px 2px 5px #3c405a54;
 }
 
 .owl-carousel .owl-item .card {
@@ -181,8 +223,9 @@ p {
 
 .owl-theme .owl-dots .owl-dot span {
   height: 20px;
-  background: #2a6ba3 !important;
-  border-radius: 2px !important;
+  background: #f7f7f7f7 !important;
+  border-radius: 10px !important;
+  border: 1px solid #191919;
   opacity: 0.8;
 }
 
@@ -192,7 +235,29 @@ p {
   width: 13px;
   opacity: 1;
   transform: translateY(2px);
-  background: #83b8e7 !important;
+  background: #457b9d !important;
+}
+
+.owl-carousel::before {
+  content: "“"; /* this is the left quote mark */
+  position: absolute;
+  color: #457b9d;
+  font-size: 10em;
+  font-weight: 700;
+  z-index: 2;
+  opacity: 0.2;
+  top: -10rem;
+}
+
+.owl-carousel::after {
+  content: "”"; /* this is the right quote mark */
+  position: absolute;
+  color: #457b9d;
+  font-size: 10em;
+  font-weight: 700;
+  z-index: 2;
+  opacity: 0.3;
+  bottom: -10rem;
 }
 
 @media (min-width: 480.6px) and (max-width: 575.5px) {
