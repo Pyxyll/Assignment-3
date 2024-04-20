@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+  </head>
+  <body>
+    <header class="container-md">
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light fixed-top"
+        style="padding-top: 1rem; padding-bottom: 1rem"
+      >
+        <div class="container-fluid" style="max-width: 1600px">
+          <a class="navbar-brand" href="#">
+            <img
+              src="https://getbootstrap.com/docs/5.1/assets/brand/bootstrap-logo.svg"
+              alt=""
+              width="30"
+              height="24"
+              class="d-inline-block align-text-top"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto me-0 mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                Course
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="about.html">Course Info</a></li>
+                  <li><a class="dropdown-item" href="industry.html">About Industry</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <header class="jumbotron hero-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 animate__animated animate__fadeInLeft">
+            <div class="p-4 p-md-5">
+              <h2 class="util-title">Electronic Engineering</h2>
+              <h3 class="hero-subtitle">
+                Reimagined <span class="highlight">.</span>
+              </h3>
+              <p>
+                Electronic Engineering, pretty darn cool right? We think so too!
+                We want to make sure it's right for you. We're going to show you
+                the ins and outs of studying Electronic Engineering in
+                Waterford.
+              </p>
+              <div>
+                <a
+                  href="#small-about"
+                  class="btn btn-outline-light me-2"
+                  onclick="event.preventDefault(); document.getElementById('small-about').scrollIntoView({ behavior: 'smooth' });"
+                  >Learn more</a
+                >
+                <a
+                  href="https://www.cao.ie/apply.php"
+                  class="btn btn-secondary"
+                  target="_blank"
+                  ><i class="bi bi-box-arrow-up-right"></i> Apply Now on CAO</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 animate__animated animate__fadeInRight">
+            <img
+              src="./images/arduino.png"
+              class="img-fluid rounded-start"
+              alt="..."
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+    <section
+      class="jumbotron bg-light"
+      style="padding-top: 3rem; padding-bottom: 3rem"
+      id="small-about"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 order-md-2">
+            <div class="p-2 p-md-3">
+              <img
+                src="./images/accentArtboard 1.svg"
+                alt="Accent Shape"
+                width="50px"
+                height="auto"
+              />
+              <h2 class="util-title text-black">Let's get started</h2>
+              <p class="text-black">
+                An electronic engineering course at Waterford Institute of
+                Technology covers a range of topics from analog and digital
+                electronics, microcontrollers, and embedded systems to circuit
+                design, control systems, and software development for electronic
+                systems. By the end of the course, you will have a solid
+                understanding of the fundamental principles and be able to
+                design, develop, and implement electronic systems using modern
+                tools and technologies.
+              </p>
+              <div>
+                <a href="#" class="btn btn-outline-secondary me-2"
+                  >Learn more</a
+                >
+                <a href="#" class="btn btn-primary">Sign up</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 order-md-1">
+            <img
+              src="./images/breadboard.webp"
+              class="img-fluid rounded filtered-img"
+              alt="..."
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="jumbotron info-box">
+      <div class="container">
+        <div class="row g-0">
+          <div class="col-md-6 offset-md-3">
+            <img
+              src="./images/laptop.webp"
+              class="img-fluid rounded"
+              alt="..."
+            />
+          </div>
+        </div>
+        <div class="row g-0">
+          <div class="col-md-6 offset-md-3">
+            <div class="p-4">
+              <h2 class="display-6 text-white">
+                What Can I Do With This Course?
+              </h2>
+              <p class="text-white">
+                After completing this course, students will have a solid
+                foundation in web development and be able to build their own
+                dynamic and responsive websites. They will be able to build web
+                applications with a user interface that is both visually
+                appealing and functional. They will also have a better
+                understanding of how to create RESTful APIs and how to consume
+                APIs in their web applications. Additionally, they will be able
+                to use a variety of web development tools and methodologies to
+                streamline their workflow and produce high quality code. Some
+                potential outcomes for students who complete this course might
+                include building a personal website, creating a web app for a
+                small business, or working on a team to build a web application
+                for a larger organization.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="my-5">
+      <div class="container" style="max-width: 1600px">
+        <h2 class="display-6 text-black">You heard it here first</h2>
+        <div class="owl-carousel owl-theme mt-5">
+          <div class="owl-item">
+              <div class="card">
+                  <div class="img-card">
+                      <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                          alt="">
+                  </div>
+                  <div class="testimonial mt-4 mb-2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita dicta doloremque odit
+                      saepe quo natus aut accusantium alias blanditiis.
+                  </div>
+                  <div class="name">
+                      Denis Richie
+                  </div>
+              </div>
+          </div>
+          <div class="owl-item">
+              <div class="card">
+                  <div class="img-card">
+                      <img src="https://images.pexels.com/photos/1024311/pexels-photo-1024311.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+                          alt="">
+                  </div>
+                  <div class="testimonial mt-4 mb-2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita dicta doloremque odit
+                      saepe quo natus aut accusantium alias blanditiis.
+                  </div>
+                  <div class="name">
+                      Lisa Sthalekar
+                  </div>
+              </div>
+          </div>
+          <div class="owl-item">
+              <div class="card">
+                  <div class="img-card">
+                      <img src="https://images.pexels.com/photos/1036622/pexels-photo-1036622.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                          alt="">
+                  </div>
+                  <div class="testimonial mt-4 mb-2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita dicta doloremque odit
+                      saepe quo natus aut accusantium alias blanditiis.
+                  </div>
+                  <div class="name">
+                      Elizabith Richie
+                  </div>
+              </div>
+          </div>
+          <div class="owl-item">
+              <div class="card">
+                  <div class="img-card">
+                      <img src="https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                          alt="">
+                  </div>
+                  <div class="testimonial mt-4 mb-2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita dicta doloremque odit
+                      saepe quo natus aut accusantium alias blanditiis.
+                  </div>
+                  <div class="name">
+                      Daniel Xavier
+                  </div>
+              </div>
+          </div>
+          <div class="owl-item">
+              <div class="card">
+                  <div class="img-card">
+                      <img src="https://images.pexels.com/photos/1832959/pexels-photo-1832959.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                          alt="">
+                  </div>
+                  <div class="testimonial mt-4 mb-2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita dicta doloremque odit
+                      saepe quo natus aut accusantium alias blanditiis.
+                  </div>
+                  <div class="name">
+                      Emma Watson
+                  </div>
+              </div>
+          </div>
+          <div class="owl-item">
+              <div class="card">
+                  <div class="img-card">
+                      <img src="https://images.pexels.com/photos/718261/pexels-photo-718261.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                          alt="">
+                  </div>
+                  <div class="testimonial mt-4 mb-2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita dicta doloremque odit
+                      saepe quo natus aut accusantium alias blanditiis.
+                  </div>
+                  <div class="name">
+                      Mohammad Imran
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+    <footer class="bg-dark text-center text-white py-2">
+      <div class="container">
+        <img src="https://dummyimage.com/200x50/000/fff" alt="Logo" />
+        <p>Copyright © 2023, Placeholder Co.</p>
+      </div>
+    </footer>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
+  <script>
+    $(document).ready(function () {
+    var silder = $(".owl-carousel");
+    silder.owlCarousel({
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: false,
+        items: 1,
+        stagePadding: 20,
+        center: true,
+        nav: false,
+        margin: 50,
+        dots: true,
+        loop: true,
+        responsive: {
+            0: { items: 1 },
+            480: { items: 2 },
+            575: { items: 2 },
+            768: { items: 2 },
+            991: { items: 3 },
+            1200: { items: 4 }
+        }
+    });
+});
+  </script>
+</html>
