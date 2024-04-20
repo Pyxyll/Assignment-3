@@ -78,7 +78,7 @@ h6 {
 }
 
 .small-about {
-  background-image: url(../images/gear-accent.svg);
+  background-image: url("../images/gear-accent.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
@@ -95,7 +95,7 @@ h6 {
   padding: 3rem 3rem;
   margin: 6.25rem 0.9375rem 1.25rem 0.9375rem;
   border-radius: 20px;
-  background-image: url(../images/icons.webp);
+  background-image: url("../images/icons.webp");
   background-size: cover;
 }
 
