@@ -24,17 +24,17 @@
   </head>
   <body>
     <header class="container-md">
+      <!-- Nav Start-->
       <nav
-        class="navbar navbar-expand-lg navbar-light bg-light fixed-top"
-        style="padding-top: 1rem; padding-bottom: 1rem"
+        class="navbar navbar-expand-lg navbar-light bg-light fixed-top pt-3 pb-3 shadow"
       >
-        <div class="container-fluid" style="max-width: 1600px">
-          <a class="navbar-brand" href="#">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
             <img
-              src="https://getbootstrap.com/docs/5.1/assets/brand/bootstrap-logo.svg"
-              alt=""
-              width="30"
-              height="24"
+              src="./images/logo.svg"
+              alt="Home-Logo"
+              width="50px"
+              height="auto"
               class="d-inline-block align-text-top"
             />
           </a>
@@ -74,12 +74,12 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Campus</a>
+                <a class="nav-link" href="campus.html">Campus</a>
               </li>
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
-                  href="campus.html"
+                  href="#"
                   id="navbarDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -88,17 +88,26 @@
                   Waterford
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Ammenities</a></li>
-                  <li><a class="dropdown-item" href="#">Accommodation</a></li>
+                  <li>
+                    <a class="dropdown-item" href="amenities.html"
+                      >Ammenities</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="accommodation.html"
+                      >Accommodation</a
+                    >
+                  </li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link cta" href="contact.html">Contact</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
+      <!-- Nav End-->
     </header>
 
     <header class="jumbotron acc-header">
@@ -106,67 +115,39 @@
         <div class="row">
           <div class="col-lg-6 animate__animated animate__fadeInLeft">
             <div class="p-4 p-md-5">
-              <h2 class="util-title">Electronic Engineering</h2>
-              <h3 class="hero-subtitle">
-                Reimagined <span class="highlight">.</span>
+              <h2 class="fw-semi-bold text-white">Accommodation in</h2>
+              <h3 class="display-2 fw-bold text-white pb-3">
+                Waterford City <span class="highlight">.</span>
               </h3>
-              <p>
-                Electronic Engineering, pretty darn cool right? We think so too!
-                We want to make sure it's right for you. We're going to show you
-                the ins and outs of studying Electronic Engineering in
-                Waterford.
+              <p class="text-white">
+                Housing is a tricky situation, let's make that a bit easier
+                shall we? There are many routes you can chose in order to get
+                accommodation in Waterford City. Housing is Waterford is among
+                the most affordable in Ireland, but with that, it can get
+                snatched up pretty quick. We are going to give you the
+                <strong> "insider scoop"</strong> on where to look for
+                accommodation.
               </p>
-              <div>
-                <a
-                  href="#small-about"
-                  class="btn btn-outline-light me-2"
-                  onclick="event.preventDefault(); document.getElementById('small-about').scrollIntoView({ behavior: 'smooth' });"
-                  >Learn more</a
-                >
-                <a
-                  href="https://www.cao.ie/apply.php"
-                  class="btn btn-secondary"
-                  target="_blank"
-                  ><i class="bi bi-box-arrow-up-right"></i> Apply Now on CAO</a
-                >
-              </div>
             </div>
           </div>
           <div class="col-lg-6 animate__animated animate__fadeInRight"></div>
         </div>
       </div>
     </header>
+
     <section class="jumbotron info-box">
       <div class="container">
         <div class="row g-0">
           <div class="col-md-6 offset-md-3">
-            <img
-              src="./images/laptop.webp"
-              class="img-fluid rounded"
-              alt="..."
-            />
-          </div>
-        </div>
-        <div class="row g-0">
-          <div class="col-md-6 offset-md-3">
             <div class="p-4">
-              <h2 class="display-6 text-white">
-                What Can I Do With This Course?
-              </h2>
+              <h2 class="display-6 text-white">What Should I Look Out For?</h2>
               <p class="text-white">
-                After completing this course, students will have a solid
-                foundation in web development and be able to build their own
-                dynamic and responsive websites. They will be able to build web
-                applications with a user interface that is both visually
-                appealing and functional. They will also have a better
-                understanding of how to create RESTful APIs and how to consume
-                APIs in their web applications. Additionally, they will be able
-                to use a variety of web development tools and methodologies to
-                streamline their workflow and produce high quality code. Some
-                potential outcomes for students who complete this course might
-                include building a personal website, creating a web app for a
-                small business, or working on a team to build a web application
-                for a larger organization.
+                Make sure you always try to view the accommodation before making
+                any descisions, get down on your hands and knees and inspect the
+                place, you will be glad you did. Don't let the landlord rush you
+                into making a descisions. Bring your parents along! They may be
+                able to ask the questions you don't. Below will be a selection
+                of links on where to find housing.
               </p>
             </div>
           </div>
@@ -179,48 +160,50 @@
           <div class="col">
             <div class="card">
               <img
-                src="https://dummyimage.com/700x400/000/fff"
+                src="./images/daft.webp"
                 class="card-img-top"
                 alt="Card image cap"
               />
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Daft.ie</h5>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Bit of a no-brainer, but student housing can be found on
+                  Daft.ie
                 </p>
+                <button class="btn btn-primary">Visit</button>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card">
               <img
-                src="https://dummyimage.com/700x400/000/fff"
+                src="./images/studentpad.webp"
                 class="card-img-top"
                 alt="Card image cap"
               />
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Student Pad</h5>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  A website where private landlords can rent out accommodation
+                  specifically for students.
                 </p>
+                <button class="btn btn-primary">Visit</button>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card">
               <img
-                src="https://dummyimage.com/700x400/000/fff"
+                src="./images/oncamp.webp"
                 class="card-img-top"
                 alt="Card image cap"
               />
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">On-Campus</h5>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  SETU Waterford also has it's own on campus accommodation.
                 </p>
+                <button class="btn btn-primary">Visit</button>
               </div>
             </div>
           </div>
@@ -229,8 +212,13 @@
     </section>
     <footer class="bg-dark text-center text-white py-2">
       <div class="container">
-        <img src="https://dummyimage.com/200x50/000/fff" alt="Logo" />
-        <p>Copyright © 2023, Placeholder Co.</p>
+        <img
+          src="./images/logo-light.svg"
+          alt="Logo"
+          width="50px"
+          height="auto"
+        />
+        <p>Copyright © 2024, Study Engineering Waterford</p>
       </div>
     </footer>
   </body>

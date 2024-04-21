@@ -24,17 +24,17 @@
   </head>
   <body>
     <header class="container-md">
+      <!-- Nav Start-->
       <nav
-        class="navbar navbar-expand-lg navbar-light bg-light fixed-top"
-        style="padding-top: 1rem; padding-bottom: 1rem"
+        class="navbar navbar-expand-lg navbar-light bg-light fixed-top pt-3 pb-3 shadow"
       >
-        <div class="container-fluid" style="max-width: 1600px">
-          <a class="navbar-brand" href="#">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
             <img
-              src="https://getbootstrap.com/docs/5.1/assets/brand/bootstrap-logo.svg"
-              alt=""
-              width="30"
-              height="24"
+              src="./images/logo.svg"
+              alt="Home-Logo"
+              width="50px"
+              height="auto"
               class="d-inline-block align-text-top"
             />
           </a>
@@ -74,12 +74,12 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Campus</a>
+                <a class="nav-link" href="campus.html">Campus</a>
               </li>
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
-                  href="campus.html"
+                  href="#"
                   id="navbarDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -88,31 +88,38 @@
                   Waterford
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Ammenities</a></li>
-                  <li><a class="dropdown-item" href="#">Accommodation</a></li>
+                  <li>
+                    <a class="dropdown-item" href="amenities.html">Amenities</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="accommodation.html"
+                      >Accommodation</a
+                    >
+                  </li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link cta" href="contact.html">Contact</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
+      <!-- Nav End-->
     </header>
 
-    <section style="padding-top: 0rem; padding-bottom: 2rem">
-      <div class="container">
+    <section>
+      <div class="container pt-5">
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
             <div class="card">
               <img
-                src="https://dummyimage.com/700x400/000/fff"
+                src="./images/library.webp"
                 class="card-img-top"
                 alt="Card image cap"
               />
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Luke Wadding library</h5>
                 <p class="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
@@ -123,12 +130,12 @@
           <div class="col">
             <div class="card">
               <img
-                src="https://dummyimage.com/700x400/000/fff"
+                src="./images/hothouse.webp"
                 class="card-img-top"
                 alt="Card image cap"
               />
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Viking Food Hall</h5>
                 <p class="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
@@ -139,12 +146,12 @@
           <div class="col">
             <div class="card">
               <img
-                src="https://dummyimage.com/700x400/000/fff"
+                src="./images/arena.webp"
                 class="card-img-top"
                 alt="Card image cap"
               />
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">SETU Arena</h5>
                 <p class="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
@@ -158,27 +165,31 @@
 
     <section>
       <div class="container">
-        <h2 class="">Our Campus</h2>
-        <div class="row">
+        <div class="row mt-5">
+          <h2 class="">Our Campus</h2>
           <div class="col-12">
             <img
-              src="https://dummyimage.com/1920x1080/000/fff"
-              class="img-fluid"
+              src="./images/setucampus.webp"
+              class="img-fluid rounded"
               alt="Campus image"
+              width="1920px"
+              height="auto"
             />
           </div>
         </div>
-        <h2 class="">Our Campus</h2>
-        <div class="row">
+        <div class="row mt-5">
+          <h2 class="">Student Life</h2>
           <div class="col-12">
             <img
-              src="https://dummyimage.com/1920x1080/000/fff"
-              class="img-fluid"
+              src="./images/campus2.webp"
+              class="img-fluid rounded"
               alt="Campus image"
+              width="1920px"
+              height="auto"
             />
           </div>
         </div>
-        <div class="row">
+        <div class="row mt-5 mb-5">
           <div class="col-md-6">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni

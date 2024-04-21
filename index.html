@@ -13,9 +13,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    />
   </head>
   <body>
     <header class="container-md">
@@ -24,7 +29,7 @@
         class="navbar navbar-expand-lg navbar-light bg-light fixed-top pt-3 pb-3 shadow"
       >
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="index.html">
             <img
               src="./images/logo.svg"
               alt="Home-Logo"
@@ -55,20 +60,26 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                Course
+                  Course
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="about.html">Course Info</a></li>
-                  <li><a class="dropdown-item" href="industry.html">About Industry</a></li>
+                  <li>
+                    <a class="dropdown-item" href="about.html">Course Info</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="industry.html"
+                      >About Industry</a
+                    >
+                  </li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Campus</a>
+                <a class="nav-link" href="campus.html">Campus</a>
               </li>
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
-                  href="campus.html"
+                  href="#"
                   id="navbarDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -77,8 +88,14 @@
                   Waterford
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="ammenities.html">Ammenities</a></li>
-                  <li><a class="dropdown-item" href="accommodation.html">Accommodation</a></li>
+                  <li>
+                    <a class="dropdown-item" href="amenities.html">Amenities</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="accommodation.html"
+                      >Accommodation</a
+                    >
+                  </li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -90,95 +107,94 @@
       </nav>
       <!-- Nav End-->
     </header>
-      <!-- Hero Start-->
-    <header class="jumbotron hero-header">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 animate__animated animate__fadeInLeft">
-            <div class="p-4 p-md-5">
-              <h2 class="fw-semi-bold text-white">Electronic Engineering</h2>
-              <h3 class="display-2 fw-bold text-white pb-3">
-                Reimagined <span class="highlight">.</span>
-              </h3>
-              <p class="text-white">
-                Electronic Engineering, pretty darn cool right? We think so too!
-                We want to make sure it's right for you. We're going to show you
-                the ins and outs of studying Electronic Engineering in
-                Waterford.
-              </p>
-              <div>
-                <a
-                  href="#small-about"
-                  class="btn btn-outline-light me-2"
-                  onclick="event.preventDefault(); document.getElementById('small-about').scrollIntoView({ behavior: 'smooth' });"
-                  >Learn more</a
-                >
-                <a
-                  href="https://www.cao.ie/apply.php"
-                  class="btn btn-secondary"
-                  target="_blank"
-                  ><i class="bi bi-box-arrow-up-right"></i> Apply Now on CAO</a
-                >
+    <main>
+      <section class="jumbotron hero-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 animate__animated animate__fadeInLeft">
+              <div class="p-4 p-md-5">
+                <h2 class="fw-semi-bold text-white">Electronic Engineering</h2>
+                <h3 class="display-2 fw-bold text-white pb-3">
+                  Reimagined <span class="highlight">.</span>
+                </h3>
+                <p class="text-white">
+                  Electronic Engineering, pretty darn cool right? We think so
+                  too! We want to make sure it's right for you. We're going to
+                  show you the ins and outs of studying Electronic Engineering
+                  in Waterford.
+                </p>
+                <div>
+                  <a
+                    href="#small-about"
+                    onclick="event.preventDefault(); document.getElementById('small-about').scrollIntoView({ behavior: 'smooth' });"
+                    ><button class="btn btn-outline-light me-2">
+                      Learn more
+                    </button></a
+                  >
+                  <a href="https://www.cao.ie/apply.php" target="_blank"></a>
+                    <button class="btn btn-secondary">
+                      <i class="bi bi-box-arrow-up-right"></i>
+
+                      Apply Now on CAO
+                    </button></a
+                  >
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-6 animate__animated animate__fadeInRight">
-            <img
-              src="./images/arduino.png"
-              class="img-fluid rounded-start"
-              alt="arduino microcontroller"
-            />
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- Hero End-->
-
-    <section
-      class="jumbotron small-about"
-      id="small-about"
-    >
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 order-md-2">
-            <div class="p-2 p-md-3">
+            <div class="col-lg-6 animate__animated animate__fadeInRight">
               <img
-                src="./images/accentArtboard 1.svg"
-                alt="Accent Shape"
-                width="50px"
-                height="auto"
+                src="./images/arduino.png"
+                class="img-fluid rounded-start"
+                alt="arduino microcontroller"
               />
-              <h2 class="util-title text-black">Let's get started</h2>
-              <p class="text-black">
-                An electronic engineering course at Waterford Institute of
-                Technology covers a range of topics from analog and digital
-                electronics, microcontrollers, and embedded systems to circuit
-                design, control systems, and software development for electronic
-                systems. By the end of the course, you will have a solid
-                understanding of the fundamental principles and be able to
-                design, develop, and implement electronic systems using modern
-                tools and technologies.
-              </p>
-              <div>
-                <a href="#" class="btn btn-outline-secondary me-2"
-                  >Learn more</a
-                >
-                <a href="#" class="btn btn-primary">Sign up</a>
-              </div>
             </div>
           </div>
-          <div class="col-md-6 order-md-1">
-            <img
-              src="./images/breadboard.webp"
-              class="img-fluid rounded filtered-img"
-              alt="..."
-            />
+        </div>
+      </section>
+      <!-- Hero End-->
+
+      <section class="jumbotron small-about" id="small-about">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 order-md-2">
+              <div class="p-2 p-md-3">
+                <img
+                  src="./images/accentArtboard 1.svg"
+                  alt="Accent Shape"
+                  width="50px"
+                  height="auto"
+                />
+                <h2 class="util-title text-black">Let's get started</h2>
+                <p class="text-black">
+                  An electronic engineering course at Waterford Institute of
+                  Technology covers a range of topics from analog and digital
+                  electronics, microcontrollers, and embedded systems to circuit
+                  design, control systems, and software development for
+                  electronic systems. By the end of the course, you will have a
+                  solid understanding of the fundamental principles and be able
+                  to design, develop, and implement electronic systems using
+                  modern tools and technologies.
+                </p>
+                <div>
+                  <a href="#" class="btn btn-outline-secondary me-2"
+                    >Learn more</a
+                  >
+                  <a href="#" class="btn btn-primary">Sign up</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 order-md-1">
+              <img
+                src="./images/breadboard.webp"
+                class="img-fluid rounded filtered-img"
+                alt="..."
+              />
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="jumbotron info-box">
-
+      </section>
+      <section class="jumbotron info-box">
+        <figure>
         <div class="row g-0">
           <div class="col-md-6 offset-md-3">
             <img
@@ -190,133 +206,151 @@
         </div>
         <div class="row">
           <div class="col-md-6 offset-md-3">
-            <div class="p-1">
-              <h2 class="display-6 text-white">
+              <h2 class="display-6 text-white mt-2">
                 What Can I Do With This Course?
               </h2>
-              <p class="text-white">
-                After completing this course, students will have a solid
-                foundation in web development and be able to build their own
-                dynamic and responsive websites. They will be able to build web
-                applications with a user interface that is both visually
-                appealing and functional. They will also have a better
-                understanding of how to create RESTful APIs and how to consume
-                APIs in their web applications. Additionally, they will be able
-                to use a variety of web development tools and methodologies to
-                streamline their workflow and produce high quality code. Some
-                potential outcomes for students who complete this course might
-                include building a personal website, creating a web app for a
-                small business, or working on a team to build a web application
-                for a larger organization.
-              </p>
+              <figcaption class="text-white mt-4">
+               Upon the completion of this course, you will be the "Rockstar" employee that every company is looking for. You will not only 
+               gain the knowledge to go out into industry, but you will also be be equipped to do further learning outside of the course.
+              .
+              </figcaption>
+          </div>
+        </div>
+      </figure>
+      </section>
+      <section class="my-5">
+        <div class="container">
+          <h2 class="display-6 text-black">You heard it here first</h2>
+          <div class="owl-carousel owl-theme mt-5">
+            <div class="owl-item">
+              <article class="card">
+                <div class="img-card">
+                  <img
+                    src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt=""
+                  />
+                </div>
+                <div class="testimonial mt-4 mb-2">
+                  "This course has been a game-changer for me in my electronic
+                  engineering studies. The lessons are well-structured, the
+                  material is easy to follow, and the instructor is top-notch.
+                  I've learned so much about circuits, electronics, and
+                  programming and feel confident that I can apply what I've
+                  learned to real-world scenarios. I highly recommend it to
+                  anyone looking to improve their skills in electronic
+                  engineering."
+                </div>
+                <div class="name">Kendrick Emard</div>
+              </article>
+            </div>
+            <div class="owl-item">
+              <article class="card">
+                <div class="img-card">
+                  <img
+                    src="https://images.pexels.com/photos/1024311/pexels-photo-1024311.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+                    alt=""
+                  />
+                </div>
+                <div class="testimonial mt-4 mb-2">
+                  "I just completed the electronic engineering course and I
+                  am blown away by how much I've learned. The lessons are
+                  well-structured and the instructor is an expert in the field.
+                  The material is easy to follow and the projects are
+                  challenging but doable. I've built a working robot and
+                  learned a lot about circuit design, programming, and
+                  embedded systems. I definitely recommend this course to
+                  anyone interested in electronic engineering."
+                </div>
+                <div class="name">Lisa Doe</div>
+              </article>
+            </div>
+            <div class="owl-item">
+              <article class="card">
+                <div class="img-card">
+                  <img
+                    src="https://images.pexels.com/photos/1036622/pexels-photo-1036622.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt=""
+                  />
+                </div>
+                <div class="testimonial mt-4 mb-2">
+                  "I just finished the electronic engineering course and I am
+                  amazed by how much I've learned. The lessons are well-structured,
+                  the instructor is an expert in the field, and the projects are
+                  challenging but rewarding. I've built a working robot, learned
+                  how to design circuits, and mastered programming in C and
+                  Python. The course covers a wide range of topics from logic
+                  gates to sensor integration to microcontrollers. I highly
+                  recommend it to anyone interested in electronic engineering
+                  or looking to advance their careers in the field."
+                </div>
+                <div class="name">Elizabith Richie</div>
+              </article>
+            </div>
+            <div class="owl-item">
+              <article class="card">
+                <div class="img-card">
+                  <img
+                    src="https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt=""
+                  />
+                </div>
+                <div class="testimonial mt-4 mb-2">
+                  "I really enjoyed this course. The instructor is very knowledgable
+                  and the lessons are well structured. The projects are challenging
+                  but definitely doable. I learned a lot about digital circuits,
+                  microcontrollers, and programming in C and Python. I would
+                  definitely recommend this course to anyone interested in
+                  electronic engineering."
+                </div>
+                <div class="name">Daniel Xavier</div>
+              </article>
+            </div>
+            <div class="owl-item">
+              <article class="card">
+                <div class="img-card">
+                  <img
+                    src="https://images.pexels.com/photos/1832959/pexels-photo-1832959.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt=""
+                  />
+                </div>
+                <div class="testimonial mt-4 mb-2">
+                  "I really enjoyed this course. The lessons are well-structured, the
+                  material is easy to follow, and the instructor is top-notch. I've
+                  learned so much about circuits, electronics, and programming and
+                  feel confident that I can apply what I've learned to real-world
+                  scenarios. I highly recommend it to anyone looking to improve
+                  their skills in electronic engineering."
+                </div>
+                <div class="name">Emma Watson</div>
+              </article>
+            </div>
+            <div class="owl-item">
+              <article class="card">
+                <div class="img-card">
+                  <img
+                    src="https://images.pexels.com/photos/718261/pexels-photo-718261.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    alt=""
+                  />
+                </div>
+                <div class="testimonial mt-4 mb-2">
+                  "I just completed the Electronic Engineering course and I am really impressed. The course covers a wide range of topics including circuits, microcontrollers, programming and PCB design. The instructor is very knowledgeable and the lessons are well structured. The projects are challenging but definitely doable. I learned a lot about digital circuits, microcontrollers, and programming in C and Python. I would definitely recommend this course to anyone interested in electronic engineering."
+                </div>
+                <div class="name">Mohammad Imran</div>
+              </article>
             </div>
           </div>
         </div>
-
-    </section>
-    <section class="my-5">
-      <div class="container">
-        <h2 class="display-6 text-black">You heard it here first</h2>
-        <div class="owl-carousel owl-theme mt-5">
-          <div class="owl-item">
-              <div class="card">
-                  <div class="img-card">
-                      <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                          alt="">
-                  </div>
-                  <div class="testimonial mt-4 mb-2">
-                      "This course has been a game-changer for me in my electronic engineering studies. The lessons are 
-                      well-structured, the material is easy to follow, and the instructor is top-notch. I've learned so 
-                      much about circuits, electronics, and programming and feel confident that I can apply what I've 
-                      learned to real-world scenarios. I highly recommend it to anyone looking to improve their skills in 
-                      electronic engineering."
-                  </div>
-                  <div class="name">
-                      Denis Richie
-                  </div>
-              </div>
-          </div>
-          <div class="owl-item">
-              <div class="card">
-                  <div class="img-card">
-                      <img src="https://images.pexels.com/photos/1024311/pexels-photo-1024311.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
-                          alt="">
-                  </div>
-                  <div class="testimonial mt-4 mb-2">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita dicta doloremque odit
-                      saepe quo natus aut accusantium alias blanditiis.
-                  </div>
-                  <div class="name">
-                      Lisa Sthalekar
-                  </div>
-              </div>
-          </div>
-          <div class="owl-item">
-              <div class="card">
-                  <div class="img-card">
-                      <img src="https://images.pexels.com/photos/1036622/pexels-photo-1036622.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                          alt="">
-                  </div>
-                  <div class="testimonial mt-4 mb-2">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita dicta doloremque odit
-                      saepe quo natus aut accusantium alias blanditiis.
-                  </div>
-                  <div class="name">
-                      Elizabith Richie
-                  </div>
-              </div>
-          </div>
-          <div class="owl-item">
-              <div class="card">
-                  <div class="img-card">
-                      <img src="https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                          alt="">
-                  </div>
-                  <div class="testimonial mt-4 mb-2">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita dicta doloremque odit
-                      saepe quo natus aut accusantium alias blanditiis.
-                  </div>
-                  <div class="name">
-                      Daniel Xavier
-                  </div>
-              </div>
-          </div>
-          <div class="owl-item">
-              <div class="card">
-                  <div class="img-card">
-                      <img src="https://images.pexels.com/photos/1832959/pexels-photo-1832959.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                          alt="">
-                  </div>
-                  <div class="testimonial mt-4 mb-2">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita dicta doloremque odit
-                      saepe quo natus aut accusantium alias blanditiis.
-                  </div>
-                  <div class="name">
-                      Emma Watson
-                  </div>
-              </div>
-          </div>
-          <div class="owl-item">
-              <div class="card">
-                  <div class="img-card">
-                      <img src="https://images.pexels.com/photos/718261/pexels-photo-718261.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                          alt="">
-                  </div>
-                  <div class="testimonial mt-4 mb-2">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita dicta doloremque odit
-                      saepe quo natus aut accusantium alias blanditiis.
-                  </div>
-                  <div class="name">
-                      Mohammad Imran
-                  </div>
-              </div>
-          </div>
-      </div>
-    </section>
+      </section>
+    </main>
     <footer class="bg-dark text-center text-white py-2">
       <div class="container">
-        <img src="https://dummyimage.com/200x50/000/fff" alt="Logo" />
-        <p>Copyright © 2023, Placeholder Co.</p>
+        <img
+          src="./images/logo-light.svg"
+          alt="Logo"
+          width="50px"
+          height="auto"
+        />
+        <p>Copyright © 2024, Study Engineering Waterford</p>
       </div>
     </footer>
   </body>
