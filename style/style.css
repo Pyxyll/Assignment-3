@@ -23,6 +23,11 @@ h6 {
   margin: 0rem 1rem;
 }
 
+.nav-item .active {
+  background-color: #457b9d !important;
+  color: #f7f7f7 !important;
+}
+
 .nav-link:hover {
   color: #457b9d !important;
 }
@@ -254,7 +259,7 @@ h6 {
 }
 
 .owl-carousel::before {
-  content: "“"; /* this is the left quote mark */
+  content: "“";
   position: absolute;
   color: #457b9d;
   font-size: 10em;
@@ -265,7 +270,7 @@ h6 {
 }
 
 .owl-carousel::after {
-  content: "”"; /* this is the right quote mark */
+  content: "”";
   position: absolute;
   color: #457b9d;
   font-size: 10em;
@@ -359,4 +364,21 @@ h6 {
 
 summary {
   list-style: none;
+}
+
+.btn-primary {
+  background-color: #457b9d !important;
+  border: none !important;
+}
+
+@media (max-width: 1400px) {
+  .display-2 {
+    font-size: 350%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .display-2 {
+    font-size: 250%;
+  }
 }
