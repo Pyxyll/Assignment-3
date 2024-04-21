@@ -356,3 +356,7 @@ h6 {
 .contact-sec {
   margin: 10rem 0rem !important;
 }
+
+summary {
+  list-style: none;
+}
